@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		86099F8028B25E5A007AFC38 /* SeguePresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86099F7F28B25E5A007AFC38 /* SeguePresentViewController.swift */; };
+		86099F8228B2603A007AFC38 /* CodePushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86099F8128B2603A007AFC38 /* CodePushViewController.swift */; };
+		86099F8428B27940007AFC38 /* CodePresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86099F8328B27940007AFC38 /* CodePresentViewController.swift */; };
 		86D67E3028AFD8CD00969DA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D67E2F28AFD8CD00969DA9 /* AppDelegate.swift */; };
 		86D67E3228AFD8CD00969DA9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D67E3128AFD8CD00969DA9 /* SceneDelegate.swift */; };
 		86D67E3428AFD8CD00969DA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D67E3328AFD8CD00969DA9 /* ViewController.swift */; };
@@ -19,6 +21,8 @@
 
 /* Begin PBXFileReference section */
 		86099F7F28B25E5A007AFC38 /* SeguePresentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeguePresentViewController.swift; sourceTree = "<group>"; };
+		86099F8128B2603A007AFC38 /* CodePushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodePushViewController.swift; sourceTree = "<group>"; };
+		86099F8328B27940007AFC38 /* CodePresentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodePresentViewController.swift; sourceTree = "<group>"; };
 		86D67E2C28AFD8CD00969DA9 /* ScreenTransitionPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenTransitionPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86D67E2F28AFD8CD00969DA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86D67E3128AFD8CD00969DA9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +68,8 @@
 				86D67E3128AFD8CD00969DA9 /* SceneDelegate.swift */,
 				86D67E3328AFD8CD00969DA9 /* ViewController.swift */,
 				86D67E3528AFD8CD00969DA9 /* Main.storyboard */,
+				86099F8328B27940007AFC38 /* CodePresentViewController.swift */,
+				86099F8128B2603A007AFC38 /* CodePushViewController.swift */,
 				86099F7F28B25E5A007AFC38 /* SeguePresentViewController.swift */,
 				86D67E4328AFE74600969DA9 /* SeguePushViewController.swift */,
 				86D67E3828AFD8CE00969DA9 /* Assets.xcassets */,
@@ -145,8 +151,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				86D67E4428AFE74600969DA9 /* SeguePushViewController.swift in Sources */,
+				86099F8228B2603A007AFC38 /* CodePushViewController.swift in Sources */,
 				86D67E3428AFD8CD00969DA9 /* ViewController.swift in Sources */,
 				86D67E3028AFD8CD00969DA9 /* AppDelegate.swift in Sources */,
+				86099F8428B27940007AFC38 /* CodePresentViewController.swift in Sources */,
 				86099F8028B25E5A007AFC38 /* SeguePresentViewController.swift in Sources */,
 				86D67E3228AFD8CD00969DA9 /* SceneDelegate.swift in Sources */,
 			);
