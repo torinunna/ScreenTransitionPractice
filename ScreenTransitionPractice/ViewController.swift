@@ -14,13 +14,15 @@ class ViewController: UIViewController {
     }
 
     @IBAction func codePresentPressed(_ sender: UIButton) {
-        guard let viewController = self.storyboard?.instantiateViewController(identifier: "CodePresentViewController") else { return }
+        guard let viewController = self.storyboard?.instantiateViewController(identifier: "CodePresentViewController") as? CodePresentViewController else { return }
         viewController.modalPresentationStyle = .fullScreen
+        viewController.name = "Tori"
         self.present(viewController, animated: true, completion: nil)
     }
     
     @IBAction func codePushPressed(_ sender: UIButton) {
-        guard let viewController = self.storyboard?.instantiateViewController(identifier: "CodePushViewController") else { return }
+        guard let viewController = self.storyboard?.instantiateViewController(identifier: "CodePushViewController") as? CodePushViewController else { return }
+        viewController.name = "Tori"
         self.navigationController?.pushViewController(viewController, animated: true)
     }
     
