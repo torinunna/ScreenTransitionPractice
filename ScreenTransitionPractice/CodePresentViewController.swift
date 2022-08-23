@@ -7,10 +7,15 @@
 
 import UIKit
 
-class CodePresentViewController: UIViewController {
+protocol SendDataDelegate: AnyObject {
+    func sendData(name: String)
+}
 
+class CodePresentViewController: UIViewController {
+    
     @IBOutlet weak var nameLabel: UILabel!
     var name: String?
+    weak var delegate: SendDataDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +26,7 @@ class CodePresentViewController: UIViewController {
     }
   
     @IBAction func backPressed(_ sender: UIButton) {
+        self.delegate?.sendData(name: "Tori")
         self.presentingViewController?.dismiss(animated: true, completion: nil)
     }
     

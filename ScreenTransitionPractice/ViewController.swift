@@ -7,8 +7,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, SendDataDelegate {
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -17,6 +19,7 @@ class ViewController: UIViewController {
         guard let viewController = self.storyboard?.instantiateViewController(identifier: "CodePresentViewController") as? CodePresentViewController else { return }
         viewController.modalPresentationStyle = .fullScreen
         viewController.name = "Tori"
+        viewController.delegate = self
         self.present(viewController, animated: true, completion: nil)
     }
     
@@ -25,6 +28,18 @@ class ViewController: UIViewController {
         viewController.name = "Tori"
         self.navigationController?.pushViewController(viewController, animated: true)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let viewController = segue.destination as? SeguePushViewController {
+            viewController.name = "Tori"
+        }
+    }
+    
+    func sendData(name: String) {
+        self.nameLabel.text = name
+        self.nameLabel.sizeToFit()
+    }
+    
     
 }
 
